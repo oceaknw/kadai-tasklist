@@ -2,9 +2,9 @@
 
 @section('content')
 
-    <h1>id: {{ $tasks->id }}の編集ページ</h1>
+    <h1>id: {{ $task->id }}の編集ページ</h1>
     
-    {!! Form::model($tasks,['route'=> ['tasks.update', $tasks->id], 'method' => 'put'])!!}
+    {!! Form::model($task,['route'=> ['tasks.update', $task->id], 'method' => 'put'])!!}
     
          {!! Form::label('content', 'タスク:') !!}
          {!! Form::text('content') !!}
